@@ -7,6 +7,7 @@ Credits and instructions are specified above each class
 in the fancy-type.css file in this directory.
 
 
+
 Usage
 ----------------------------------------------------------------
 
