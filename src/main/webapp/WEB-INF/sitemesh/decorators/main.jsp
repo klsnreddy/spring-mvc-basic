@@ -22,7 +22,7 @@
 	href="<c:url value="/resources/blueprint/plugins/fancy-type/screen.css" />"
 	type="text/css" media="screen, projection">
 <link type="text/css"
-	href="<c:url value="/resources/jquery/css/smoothness/jquery-ui-1.8.9.custom.css"/>"
+	href="<c:url value="/resources/jquery/css/ui-lightness/jquery-ui-1.8.9.custom.css"/>"
 	rel="stylesheet" />
 <script
 	src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"
