@@ -10,25 +10,15 @@
 <head>
 <META  http-equiv="Content-Type"  content="text/html;charset=UTF-8">
 <title><decorator:title default="Welcome!" /></title>
+
+<!-- CSS Stylesheets Yaml and Jquery UI -->
+
 <link rel="stylesheet" type="text/css"
-	href="<c:url value="/resources/ext-3.3.0/css/ext-all.css"/>" />
-<link rel="stylesheet"
-	href="<c:url value="/resources/blueprint/screen.css" />"
-	type="text/css" media="screen, projection">
-<link rel="stylesheet"
-	href="<c:url value="/resources/blueprint/print.css" />" type="text/css"
-	media="print">
-<!--[if lt IE 8]><link rel="stylesheet" href="<c:url value="/resources/blueprint/ie.css" />" type="text/css" media="screen, projection"><![endif]-->
-<!-- Import fancy-type plugin for the sample page. -->
-<link rel="stylesheet"
-	href="<c:url value="/resources/blueprint/plugins/fancy-type/screen.css" />"
-	type="text/css" media="screen, projection">
+	href="<c:url value="/resources/css/layout_grids2.css"/>" />
+
 <link type="text/css"
 	href="<c:url value="/resources/jquery/css/ui-lightness/jquery-ui-1.8.9.custom.css"/>"
 	rel="stylesheet" />
-
-<!-- overrides to base library -->
-
 
 <!-- ** Javascript ** -->
 
@@ -45,18 +35,31 @@
 </head>
 
 <body>
-<div class="container">
-<div id="header" class="span-24 last"">
+<div class="page_margins">
+
+<div class="page">
+
+<div id="header" role="banner">
 <h1><fmt:message key="welcome.title" /></h1>
+<h2>Welcome to Akki's paradise.</h2>
 </div>
-<hr />
-<div id="subheader" class="span-24 last">
-<h3 class="alt">Welcome to Akki's paradise.</h3>
-</div>
-<hr />
+
 <decorator:body />
-<p><small>(<a href="?printable=true">printable version</a>)</small></p>
-<hr />
+
+<div id="footer" role="contentinfo">
+<h2>Open your mind for flexibility! There is a world far beyond
+simple column-based web design ...</h2>
+<p>Layout inspired <a href="http://www.yaml.de"></a>by <a
+	href="http://files.bjorkoy.com/blueprint/tests/parts/sample.html">sample
+website</a> from <a href="http://code.google.com/p/blueprintcss/">Blueprint
+CSS</a><br />
+Rebuilt as an example, using grid elements of <a
+	href="http://www.yaml.de/en/">YAML</a></p>
+
+</div>
+
+</div>
+
 </div>
 </body>
 </html>
