@@ -31,20 +31,14 @@
 
 
 <!-- ** Javascript ** -->
-<!-- ExtJS library: base/adapter -->
-<script type="text/javascript"
-	src="<c:url value="/resources/ext-3.3.0/adapter/ext/ext-base.js"/>"></script>
-<!-- ExtJS library: all widgets -->
-<script type="text/javascript"
-	src="<c:url value="/resources/ext-3.3.0/ext-all-debug.js"/>"></script>
 
 <script
-	src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.js"
 	type="text/javascript" charset="utf-8">
 	
 </script>
 <script type="text/javascript"
-	src="<c:url value="/resources/jquery/js/jquery-ui-1.8.9.custom.min.js" />">
+	src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.js">
 	
 </script>
 <decorator:head />
