@@ -10,6 +10,8 @@
 <head>
 <META  http-equiv="Content-Type"  content="text/html;charset=UTF-8">
 <title><decorator:title default="Welcome!" /></title>
+<link rel="stylesheet" type="text/css"
+	href="<c:url value="/resources/ext-3.3.0/css/ext-all.css"/>" />
 <link rel="stylesheet"
 	href="<c:url value="/resources/blueprint/screen.css" />"
 	type="text/css" media="screen, projection">
@@ -24,6 +26,18 @@
 <link type="text/css"
 	href="<c:url value="/resources/jquery/css/ui-lightness/jquery-ui-1.8.9.custom.css"/>"
 	rel="stylesheet" />
+
+<!-- overrides to base library -->
+
+
+<!-- ** Javascript ** -->
+<!-- ExtJS library: base/adapter -->
+<script type="text/javascript"
+	src="<c:url value="/resources/ext-3.3.0/adapter/ext/ext-base.js"/>"></script>
+<!-- ExtJS library: all widgets -->
+<script type="text/javascript"
+	src="<c:url value="/resources/ext-3.3.0/ext-all-debug.js"/>"></script>
+
 <script
 	src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"
 	type="text/javascript" charset="utf-8">
@@ -32,10 +46,6 @@
 <script type="text/javascript"
 	src="<c:url value="/resources/jquery/js/jquery-ui-1.8.9.custom.min.js" />">
 	
-</script>
-<script type="text/javascript">
-	$(document).ready(function() {
-	});
 </script>
 <decorator:head />
 </head>
