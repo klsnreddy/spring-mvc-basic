@@ -67,6 +67,7 @@
                                 adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
                                 magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                                 laboris nisi ut aliquip ex ea commodo consequat.
+                                <input id="myBut" value="A submit button" type="submit">
                             </div>
                             <div id="tabs-2">
                                 Phasellus mattis tincidunt nibh. Cras orci urna,

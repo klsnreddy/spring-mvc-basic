@@ -28,7 +28,7 @@
 	</logger>
 
 	<logger name="org.springframework">
-		<level value="INFO" />
+		<level value="DEBUG" />
 		<appender-ref ref="orgDevelopersLogFileAppender" />
 	</logger>
 

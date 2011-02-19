@@ -4,7 +4,21 @@
 $(document).ready(function(){
     // Tabs
     $('#tabs').tabs();
-    $('#tabs').toggle(1000);
-    $('#tabs').toggle(1000);
-    $('#tabs-1').effect("highlight", {}, 5000);
+    $("#myBut").button()
+    $("#myBut").click(checkAvailability);
+    
 });
+
+
+function checkAvailability(){
+    $('#tabs-1').effect("highlight", {}, 5000);
+    console.log('invoked checkAvailability');
+    $.ajax({
+        url: 'getDocument.do',
+        dataType: 'json',
+        data: {
+            name: 'vijay'
+        },
+        success: console.log(data)
+    });
+}
