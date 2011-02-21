@@ -19,6 +19,9 @@ function checkAvailability(){
         data: {
             name: 'vijay'
         },
-        success: console.log(data)
+        success: function(data){
+			console.log("Success");
+            console.log(data)
+        }
     });
 }
