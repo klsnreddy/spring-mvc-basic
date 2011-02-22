@@ -5,10 +5,20 @@ $(document).ready(function(){
     // Tabs
     $('#tabs').tabs();
     $("#myBut").button()
-    $("#myBut").click(checkAvailability);
+    $("#myBut").click(getJsoncheckAvailability);
     
 });
 
+function getJsoncheckAvailability(){
+    $('#tabs-1').effect("highlight", {}, 5000);
+    console.log('invoked getJsoncheckAvailability');
+    $.getJSON("getDocument.do", {
+        name: "Vijay"
+    }, function(data){
+        console.log("Success");
+        console.log(data)
+    });
+}
 
 function checkAvailability(){
     $('#tabs-1').effect("highlight", {}, 5000);
@@ -20,8 +30,11 @@ function checkAvailability(){
             name: 'vijay'
         },
         success: function(data){
-			console.log("Success");
+            console.log("Success");
             console.log(data)
+        },
+        error: function(){
+            console.log('error checkavailability')
         }
     });
 }

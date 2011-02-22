@@ -33,12 +33,12 @@ public class HelloWorldController {
 
 	@RequestMapping(value = "/getDocument", method = RequestMethod.GET)
 	public @ResponseBody
-	String getDocument(@RequestParam String name) {
+	MedQuestDocument getDocument(@RequestParam String name) {
 		logger.debug(name);
 		MedQuestDocument mqd = new MedQuestDocument();
 		mqd.setId(1);
 		mqd.setQuestion("What is  corned beef");
 		mqd.setResponse("Corned beef is a kind of beef !!!! ");
-		return mqd.toString();
+		return mqd;
 	}
 }
