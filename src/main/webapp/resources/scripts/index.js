@@ -23,18 +23,25 @@ function getJsoncheckAvailability(){
 function checkAvailability(){
     $('#tabs-1').effect("highlight", {}, 5000);
     console.log('invoked checkAvailability');
-    $.ajax({
-        url: 'getDocument.do',
-        dataType: 'json',
-        data: {
-            name: 'vijay'
-        },
-        success: function(data){
-            console.log("Success");
-            console.log(data)
-        },
-        error: function(){
-            console.log('error checkavailability')
-        }
-    });
+    try {
+        $.ajax({
+            url: 'getDocument.do',
+            dataType: 'json',
+            data: {
+                name: 'vijay'
+            },
+            success: function(data){
+                console.log("Success");
+                console.log(data)
+            },
+            error: function(xhr, ajaxOptions, thrownError){
+                alert(xhr.status);
+                alert(thrownError);
+            }
+        });
+    } 
+    catch (e) {
+        console.log(e.message);
+    }
+    
 }
