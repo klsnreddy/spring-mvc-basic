@@ -5,7 +5,7 @@ $(document).ready(function(){
     // Tabs
     $('#tabs').tabs();
     $("#myBut").button()
-    $("#myBut").click(getJsoncheckAvailability);
+    $("#myBut").click(checkAvailability);
     
 });
 
