@@ -14,21 +14,18 @@
 <link rel="stylesheet" type="text/css"
 	href="<c:url value="/resources/css/layout_grids2.css"/>" />
 
-<link type="text/css"
-	href="<c:url value="/resources/jquery/css/ui-lightness/jquery-ui-1.8.9.custom.css"/>"
-	rel="stylesheet" />
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/pepper-grinder/jquery-ui.css" type="text/css" media="all" />
+<link rel="stylesheet" href="http://static.jquery.com/ui/css/demo-docs-theme/ui.theme.css" type="text/css" media="all" />
+
+
 
 <!-- ** Javascript ** -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js" type="text/javascript"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js" type="text/javascript"></script>
+<script src="http://jquery-ui.googlecode.com/svn/tags/latest/external/jquery.bgiframe-2.1.2.js" type="text/javascript"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/i18n/jquery-ui-i18n.min.js" type="text/javascript"></script>
 
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.js"
-	type="text/javascript" charset="utf-8">
-	
-</script>
-<script type="text/javascript"
-	src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.js">
-	
-</script>
+
 <decorator:head />
 </head>
 

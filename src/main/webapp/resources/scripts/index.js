@@ -9,16 +9,39 @@ $(document).ready(function(){
     
 });
 
+function getJsoncheckAvailability(){
+    $('#tabs-1').effect("highlight", {}, 5000);
+    console.log('invoked getJsoncheckAvailability');
+    $.getJSON("getDocument.do", {
+        name: "Vijay"
+    }, function(data){
+        console.log("Success");
+        console.log(data)
+    });
+}
 
 function checkAvailability(){
     $('#tabs-1').effect("highlight", {}, 5000);
     console.log('invoked checkAvailability');
-    $.ajax({
-        url: 'getDocument.do',
-        dataType: 'json',
-        data: {
-            name: 'vijay'
-        },
-        success: console.log(data)
-    });
+    try {
+        $.ajax({
+            url: 'getDocument.do',
+            dataType: 'json',
+            data: {
+                name: 'vijay'
+            },
+            success: function(data){
+                console.log("Success");
+                console.log(data)
+            },
+            error: function(xhr, ajaxOptions, thrownError){
+                alert(xhr.status);
+                alert(thrownError);
+            }
+        });
+    } 
+    catch (e) {
+        console.log(e.message);
+    }
+    
 }
