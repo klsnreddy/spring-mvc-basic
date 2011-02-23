@@ -124,6 +124,11 @@
 			<artifactId>jackson-xc</artifactId>
 			<version>1.7.2</version>
 		</dependency>
+		<dependency>
+			<groupId>com.akkineni.schema</groupId>
+			<artifactId>JaxbTypes</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 	<repositories>
 		<!-- For Hibernate Validator -->
