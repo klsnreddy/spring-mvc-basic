@@ -13,7 +13,7 @@
 
 <link rel="stylesheet" type="text/css"
 	href="<c:url value="/resources/css/layout_grids2.css"/>" />
-
+ 
 <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/pepper-grinder/jquery-ui.css" type="text/css" media="all" />
 <link rel="stylesheet" href="http://static.jquery.com/ui/css/demo-docs-theme/ui.theme.css" type="text/css" media="all" />
 
