@@ -7,13 +7,13 @@ http://www.springframework.org/schema/security
 http://www.springframework.org/schema/security/spring-security-3.0.4.xsd">
 
 	<security:http auto-config="true">
-		<security:intercept-url pattern="/css/**"
+		<security:intercept-url pattern="/resources/**"
 			filters="none" />
 		<security:intercept-url pattern="/login.html*"
 			filters="none" />
 		<security:intercept-url pattern="/**" access="ROLE_USER" />
 		<security:form-login login-page='/login.html'
-			default-target-url='/home.htm' always-use-default-target='true' />
+			default-target-url='/home.html' always-use-default-target='true' />
 		<security:port-mappings>
 			<security:port-mapping http="8080" https="443" />
 		</security:port-mappings>
