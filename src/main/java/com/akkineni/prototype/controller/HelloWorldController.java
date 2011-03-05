@@ -3,6 +3,9 @@
  */
 package com.akkineni.prototype.controller;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -33,12 +36,20 @@ public class HelloWorldController {
 
 	@RequestMapping(value = "/getDocument", method = RequestMethod.GET)
 	public @ResponseBody
-	MedQuestDocument getDocument(@RequestParam String name) {
+	List<MedQuestDocument> getDocument(@RequestParam String name) {
 		logger.debug(name);
-		MedQuestDocument mqd = new MedQuestDocument();
-		mqd.setId(1);
-		mqd.setQuestion("What is  corned beef");
-		mqd.setResponse("Corned beef is a kind of beef !!!! ");
-		return mqd;
+
+		List<MedQuestDocument> documentList = new ArrayList<MedQuestDocument>();
+
+		for (int i = 0; i < 5; i++) {
+			MedQuestDocument mqd = new MedQuestDocument();
+			mqd.setId(1);
+			mqd.setQuestion("What is  corned beef");
+			mqd.setResponse("Corned beef is a kind of beef !!!! ");
+
+			documentList.add(mqd);
+		}
+
+		return documentList;
 	}
 }
