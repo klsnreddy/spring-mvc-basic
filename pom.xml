@@ -33,25 +33,22 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.security</groupId>
-<<<<<<< HEAD
 			<artifactId>spring-security-core</artifactId>
 			<version>${org.springframework.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.security</groupId>
-=======
->>>>>>> 0349a3e248294ad88a4305a70bfd4cfc11db0ae0
 			<artifactId>spring-security-openid</artifactId>
 			<version>${org.springframework.version}</version>
 		</dependency>
 		<dependency>
-<<<<<<< HEAD
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-tx</artifactId>
-=======
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-config</artifactId>
->>>>>>> 0349a3e248294ad88a4305a70bfd4cfc11db0ae0
+			<version>${org.springframework.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
 			<version>${org.springframework.version}</version>
 		</dependency>
 
@@ -157,17 +154,6 @@
 			<artifactId>rome</artifactId>
 			<version>1.0.0</version>
 		</dependency>
-<<<<<<< HEAD
-
-
-		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-config</artifactId>
-			<version>3.0.5.RELEASE</version>
-		</dependency>
-=======
-		
->>>>>>> 0349a3e248294ad88a4305a70bfd4cfc11db0ae0
 	</dependencies>
 	<repositories>
 		<repository>
