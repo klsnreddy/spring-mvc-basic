@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.springframework.samples</groupId>
 	<artifactId>spring-mvc-basic</artifactId>
 	<name>spring-mvc-basic</name>
 	<packaging>war</packaging>
 	<version>1.0.0-SNAPSHOT</version>
+
 	<properties>
 		<org.springframework.version>3.0.5.RELEASE</org.springframework.version>
 		<org.slf4j.version>1.6.1</org.slf4j.version>
 	</properties>
+
 	<dependencies>
 
 		<!-- Spring -->
@@ -32,6 +35,13 @@
 			<version>${org.springframework.version}</version>
 		</dependency>
 		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+			<version>${org.springframework.version}</version>
+		</dependency>
+
+		<!-- Spring Security -->
+		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-core</artifactId>
 			<version>${org.springframework.version}</version>
@@ -47,9 +57,16 @@
 			<version>${org.springframework.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-tx</artifactId>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-taglibs</artifactId>
 			<version>${org.springframework.version}</version>
+		</dependency>
+		
+		<!-- Domain Classes from Jaxb schemas -->
+		<dependency>
+			<groupId>com.akkineni.schema</groupId>
+			<artifactId>JaxbTypes</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
 		</dependency>
 
 		<!-- Logging -->
@@ -122,6 +139,34 @@
 			<version>1.2</version>
 		</dependency>
 
+		<!-- Sitemesh templating -->
+		<dependency>
+			<groupId>opensymphony</groupId>
+			<artifactId>sitemesh</artifactId>
+			<version>2.4.2</version>
+		</dependency>
+
+		<!-- Mongo DB Java Driver -->
+		<dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongo-java-driver</artifactId>
+			<version>2.4</version>
+		</dependency>
+
+		<!-- Jackson Jar for JSON content -->
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-xc</artifactId>
+			<version>1.7.2</version>
+		</dependency>
+
+		<!-- Roe Jars for Atom and RSS -->
+		<dependency>
+			<groupId>net.java.dev.rome</groupId>
+			<artifactId>rome</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+
 		<!-- Test -->
 		<dependency>
 			<groupId>junit</groupId>
@@ -129,32 +174,9 @@
 			<version>4.7</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>opensymphony</groupId>
-			<artifactId>sitemesh</artifactId>
-			<version>2.4.2</version>
-		</dependency>
-		<dependency>
-			<groupId>org.mongodb</groupId>
-			<artifactId>mongo-java-driver</artifactId>
-			<version>2.4</version>
-		</dependency>
-		<dependency>
-			<groupId>org.codehaus.jackson</groupId>
-			<artifactId>jackson-xc</artifactId>
-			<version>1.7.2</version>
-		</dependency>
-		<dependency>
-			<groupId>com.akkineni.schema</groupId>
-			<artifactId>JaxbTypes</artifactId>
-			<version>1.0.0-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>net.java.dev.rome</groupId>
-			<artifactId>rome</artifactId>
-			<version>1.0.0</version>
-		</dependency>
+
 	</dependencies>
+	
 	<repositories>
 		<repository>
 			<!-- For Hibernate Validator -->
@@ -166,6 +188,7 @@
 			</snapshots>
 		</repository>
 	</repositories>
+	
 	<build>
 		<plugins>
 			<plugin>
@@ -203,4 +226,5 @@
 			</plugin>
 		</plugins>
 	</build>
+	
 </project>
