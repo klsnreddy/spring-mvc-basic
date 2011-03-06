@@ -9,11 +9,11 @@ http://www.springframework.org/schema/security/spring-security-3.0.4.xsd">
 	<security:http auto-config="true">
 		<security:intercept-url pattern="/resources/**"
 			filters="none" />
-		<security:intercept-url pattern="/login.html*"
+		<security:intercept-url pattern="/login.jsp*"
 			filters="none" />
 		<security:intercept-url pattern="/**" access="ROLE_USER" />
-		<security:form-login login-page='/login.html'
-			default-target-url='/home.html' always-use-default-target='true' />
+		<security:form-login login-page='/login.jsp'
+			default-target-url='/index.jsp' always-use-default-target='true' />
 		<security:port-mappings>
 			<security:port-mapping http="8080" https="443" />
 		</security:port-mappings>
