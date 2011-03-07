@@ -1,61 +1,52 @@
-<?xml version="1.0" encoding="ISO-8859-1" ?>
 <%@page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ taglib uri="http://www.opensymphony.com/sitemesh/decorator"
 	prefix="decorator"%>
+<!doctype html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Spring 3.0 MVC</title> <script type="text/javascript"
-		src="<c:url value="/resources/scripts/index.js"/>">
-		
-	</script>
+<title>Spring 3.0 MVC</title>
+<script type="text/javascript"
+	src="<c:url value="/resources/scripts/index.js"/>">
+	
+</script>
 </head>
 <body>
-	<div id="main">
-		<div class="subcolumns">
-			<div class="c66l" role="main">
-				<h1>Please Log In to Your Account</h1>
-				<p>Please use the form below to log in to your account.</p>
-				<form action="j_spring_security_check" method="post">
-					<label for="j_username">Login</label>: <input id="j_username"
-						name="j_username" size="20" maxlength="50" type="text" /> <br />
-					<label for="j_password">Password</label>: <input id="j_password"
-						name="j_password" size="20" maxlength="50" type="password" /> <br />
-					<input type="submit" value="Login" />
-				</form>
-			</div>
-			<div class="c33r" role="complementary">
-				<div class="subcr">
-					<div id="tabs">
-						<ul>
-							<li><a href="#tabs-1">First</a>
-							</li>
-							<li><a href="#tabs-2">Second</a>
-							</li>
-							<li><a href="#tabs-3">Third</a>
-							</li>
-						</ul>
-						<div id="tabs-1">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-							enim ad minim veniam, quis nostrud exercitation ullamco laboris
-							nisi ut aliquip ex ea commodo consequat. <input id="myBut"
-								value="A submit button" type="submit">
-						</div>
-						<div id="tabs-2">Phasellus mattis tincidunt nibh. Cras orci
-							urna, blandit id, pretium vel, aliquet ornare, felis. Maecenas
-							scelerisque sem non nisl. Fusce sed lorem in enim dictum
-							bibendum.</div>
-						<div id="tabs-3">Nam dui erat, auctor a, dignissim quis,
-							sollicitudin eu, felis. Pellentesque nisi urna, interdum eget,
-							sagittis et, consequat vestibulum, lacus. Mauris porttitor
-							ullamcorper augue.</div>
-					</div>
-				</div>
-			</div>
-		</div>
+	<div class="content col_16 col">
+		<article>
+			<h1>Please Log In to Your Account</h1>
+			<blockquote class="right">Please find the recipe details
+				to the left.</blockquote>
+			<p>
+				Lorem ipsum <a href="#">link one</a> dolor sit amet, consectetur
+				adipiscing elit. Nullam a purus ac est dapibus feugiat eu eget
+				nulla. Sed molestie feugiat viverra. Pellentesque consectetur, leo
+				in faucibus congue, elit purus bibendum tellus, non tincidunt tortor
+				mauris in sem. Suspendisse sodales metus eget sem suscipit eleifend.
+				Proin porttitor, ante vel egestas pretium, nulla eros mollis eros,
+				dapibus molestie lacus mi at sapien. Fusce risus risus, vulputate
+				vel bibendum nec, accumsan non lacus.Fusce viverra mollis sapien non
+				mattis. Suspendisse id est sapien. Aliquam quis tellus sed lorem
+				fermentum rutrum in eget urna. Mauris ac dolor sit amet tellus
+				tristique eleifend. Morbi venenatis ultricies eleifend. Nunc arcu
+				lorem, feugiat pulvinar laoreet convallis, consequat sed elit.
+				Suspendisse potenti.Vivamus a turpis augue. Class aptent taciti
+				sociosqu ad litora torquent per conubia nostra, per inceptos
+				himenaeos. Morbi blandit erat eget purus gravida nec aliquam lectus
+				sollicitudin. Aenean semper tortor nunc, dignissim malesuada arcu.
+				Nunc nec massa a erat consectetur porta vitae eu mauris. Donec a
+				orci dolor. Sed ac erat sed ipsum imperdiet accumsan.
+			</p>
+			
+			<form action="j_spring_security_check" method="post">
+				<label for="j_username">Login</label><input id="j_username"
+					name="j_username" size="20" maxlength="50" type="text" /> <br />
+				<label for="j_password">Password</label><input id="j_password"
+					name="j_password" size="20" maxlength="50" type="password" /> <br />
+				<input type="submit" value="Login" />
+			</form>
+		</article>
 	</div>
 </body>
 </html>
