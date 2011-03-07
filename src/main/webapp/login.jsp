@@ -38,7 +38,11 @@
 				Nunc nec massa a erat consectetur porta vitae eu mauris. Donec a
 				orci dolor. Sed ac erat sed ipsum imperdiet accumsan.
 			</p>
-			
+
+			<progress id="progressbar" max=100>
+				<span>0</span>%
+			</progress>
+
 			<form action="j_spring_security_check" method="post">
 				<label for="j_username">Login</label><input id="j_username"
 					name="j_username" size="20" maxlength="50" type="text" /> <br />
