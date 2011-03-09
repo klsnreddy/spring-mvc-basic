@@ -23,13 +23,12 @@ http://www.springframework.org/schema/security/spring-security-3.0.4.xsd">
 
 	<security:authentication-manager>
 		<security:authentication-provider>
-			<security:user-service>
-				<security:user name="vijay" password="password"
-					authorities="ROLE_USER, ROLE_ADMIN" />
-				<security:user name="akhila" password="password"
-					authorities="ROLE_USER" />
-			</security:user-service>
+			<security:jdbc-user-service
+				data-source-ref="dataSource" />
 		</security:authentication-provider>
 	</security:authentication-manager>
 
+	<!-- <security:user-service> <security:user name="vijay" password="password" 
+		authorities="ROLE_USER, ROLE_ADMIN" /> <security:user name="akhila" password="password" 
+		authorities="ROLE_USER" /> </security:user-service> -->
 </beans>

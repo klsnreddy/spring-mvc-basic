@@ -10,7 +10,7 @@
 	</appender>
 
 	<!-- log all logs to a separate log file every day -->
-	<appender name="orgDevelopersLogFileAppender" class="org.apache.log4j.DailyRollingFileAppender">
+	<appender name="cookbookLogFileAppender" class="org.apache.log4j.DailyRollingFileAppender">
 		<param name="file" value="spring-mvc-basic.log" />
 		<param name="datePattern" value="'.'yyyy-MM-dd" />
 		<param name="append" value="true" />
@@ -24,12 +24,12 @@
 	<logger name="com.akkineni">
 		<!-- level info logs -->
 		<level value="DEBUG" />
-		<appender-ref ref="orgDevelopersLogFileAppender" />
+		<appender-ref ref="cookbookLogFileAppender" />
 	</logger>
 
 	<logger name="org.springframework">
-		<level value="DEBUG" />
-		<appender-ref ref="orgDevelopersLogFileAppender" />
+		<level value="INFO" />
+		<appender-ref ref="cookbookLogFileAppender" />
 	</logger>
 
 	<root>

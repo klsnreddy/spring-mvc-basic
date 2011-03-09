@@ -10,9 +10,12 @@
 			http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
 			http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd">
 
+	<!-- Embedded Database -->
+	<jdbc:embedded-database id="EmbeddedH2" type="H2">
+	</jdbc:embedded-database>
+
 	<!-- Configurer that replaces ${...} placeholders with values from jdbc.properties 
 		file -->
-
 	<context:property-placeholder location="classpath:jdbc.properties" />
 
 	<!-- DataSource configuration for Apache Commons DBCP. -->
@@ -26,9 +29,5 @@
 		<jdbc:script location="${jdbc.initLocation}" />
 		<jdbc:script location="${jdbc.dataLocation}" />
 	</jdbc:initialize-database>
-
-	<!-- Embedded Database -->
-	<jdbc:embedded-database id="EmbeddedH2" type="H2">
-	</jdbc:embedded-database>
 
 </beans>
