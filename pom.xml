@@ -116,6 +116,13 @@
 			<version>4.1.0.Final</version>
 		</dependency>
 
+		<!-- Database connection pooling jar -->
+		<dependency>
+			<groupId>commons-dbcp</groupId>
+			<artifactId>commons-dbcp</artifactId>
+			<version>1.4</version>
+		</dependency>
+
 		<!-- Embedded DB H2 for Test Driven Development -->
 		<dependency>
 			<groupId>com.h2database</groupId>
