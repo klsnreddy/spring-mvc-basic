@@ -116,7 +116,7 @@
 			<version>4.1.0.Final</version>
 		</dependency>
 
-		<!-- Embedded DB H2 -->
+		<!-- Embedded DB H2 for Test Driven Development -->
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
