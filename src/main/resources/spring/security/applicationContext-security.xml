@@ -13,7 +13,7 @@ http://www.springframework.org/schema/security/spring-security-3.0.4.xsd">
 			filters="none" />
 		<security:intercept-url pattern="/**" access="ROLE_USER" />
 		<security:form-login login-page='/login.jsp'
-			default-target-url='/index.jsp' always-use-default-target='true' />
+			default-target-url='/index.jsp' />
 		<security:port-mappings>
 			<security:port-mapping http="8080" https="443" />
 		</security:port-mappings>
