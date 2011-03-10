@@ -11,6 +11,8 @@ http://www.springframework.org/schema/security/spring-security-3.0.4.xsd">
 			filters="none" />
 		<security:intercept-url pattern="/login.jsp*"
 			filters="none" />
+		<security:intercept-url pattern="/admin/h2/*"
+			filters="none" />
 		<security:intercept-url pattern="/**" access="ROLE_USER" />
 		<security:form-login login-page='/login.jsp'
 			default-target-url='/index.jsp' />
