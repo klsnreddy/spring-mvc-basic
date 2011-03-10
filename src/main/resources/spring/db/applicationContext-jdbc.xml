@@ -11,7 +11,7 @@
 			http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd">
 
 	<!-- Embedded Database -->
-	<jdbc:embedded-database id="CookDB" type="HSQL">
+	<jdbc:embedded-database id="CookDB" type="H2">
 	</jdbc:embedded-database>
 
 	<!-- Configurer that replaces ${...} placeholders with values from jdbc.properties 
