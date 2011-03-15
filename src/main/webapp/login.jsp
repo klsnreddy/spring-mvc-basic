@@ -13,44 +13,46 @@
 </script>
 </head>
 <body>
-	<div class="content col_16 col">
-		<article>
-			<h1>Please Log In to Your Account</h1>
-			<blockquote class="right">Please find the recipe details
-				to the left.</blockquote>
-			<p>
-				Lorem ipsum <a href="#">link one</a> dolor sit amet, consectetur
-				adipiscing elit. Nullam a purus ac est dapibus feugiat eu eget
-				nulla. Sed molestie feugiat viverra. Pellentesque consectetur, leo
-				in faucibus congue, elit purus bibendum tellus, non tincidunt tortor
-				mauris in sem. Suspendisse sodales metus eget sem suscipit eleifend.
-				Proin porttitor, ante vel egestas pretium, nulla eros mollis eros,
-				dapibus molestie lacus mi at sapien. Fusce risus risus, vulputate
-				vel bibendum nec, accumsan non lacus.Fusce viverra mollis sapien non
-				mattis. Suspendisse id est sapien. Aliquam quis tellus sed lorem
-				fermentum rutrum in eget urna. Mauris ac dolor sit amet tellus
-				tristique eleifend. Morbi venenatis ultricies eleifend. Nunc arcu
-				lorem, feugiat pulvinar laoreet convallis, consequat sed elit.
-				Suspendisse potenti.Vivamus a turpis augue. Class aptent taciti
-				sociosqu ad litora torquent per conubia nostra, per inceptos
-				himenaeos. Morbi blandit erat eget purus gravida nec aliquam lectus
-				sollicitudin. Aenean semper tortor nunc, dignissim malesuada arcu.
-				Nunc nec massa a erat consectetur porta vitae eu mauris. Donec a
-				orci dolor. Sed ac erat sed ipsum imperdiet accumsan.
-			</p>
-
-			<progress id="progressbar" max=100>
-				<span>0</span>%
-			</progress>
-
-			<form action="j_spring_security_check" method="post">
-				<label for="j_username">Login</label><input id="j_username"
-					name="j_username" size="20" maxlength="50" type="text" /> <br />
-				<label for="j_password">Password</label><input id="j_password"
-					name="j_password" size="20" maxlength="50" type="password" /> <br />
-				<input type="submit" value="Login" />
-			</form>
-		</article>
-	</div>
+	<section class="row">
+		<div class="col_16 col">
+			<div class="col_12 left">
+				<article>
+					<h3>Please Log In to Your Account</h3>
+					<blockquote class="right">Please find the recipe
+						details to the left.</blockquote>
+					<p>
+						Lorem ipsum <a href="#">link one</a> dolor sit amet, consectetur
+						adipiscing elit. Nullam a purus ac est dapibus feugiat eu eget
+						nulla. Sed molestie feugiat viverra. Pellentesque consectetur, leo
+						in faucibus congue, elit purus bibendum tellus, non tincidunt
+						tortor mauris in sem. Suspendisse sodales metus eget sem suscipit
+						eleifend. Proin porttitor, ante vel egestas pretium, nulla eros
+						mollis eros, dapibus molestie lacus mi at sapien. Fusce risus
+						risus, vulputate vel bibendum nec, accumsan non lacus.Fusce
+						viverra mollis sapien non mattis. Suspendisse id est sapien.
+						Aliquam quis tellus sed lorem fermentum rutrum in eget urna.
+						Mauris ac dolor sit amet tellus tristique eleifend. Morbi
+						venenatis ultricies eleifend. Nunc arcu lorem, feugiat pulvinar
+						laoreet convallis, consequat sed elit. Suspendisse potenti.Vivamus
+						a turpis augue. Class aptent taciti sociosqu ad litora torquent
+						per conubia nostra, per inceptos himenaeos. Morbi blandit erat
+						eget purus gravida nec aliquam lectus sollicitudin. Aenean semper
+						tortor nunc, dignissim malesuada arcu. Nunc nec massa a erat
+						consectetur porta vitae eu mauris. Donec a orci dolor. Sed ac erat
+						sed ipsum imperdiet accumsan.
+					</p>
+				</article>
+			</div>
+			<div class="col_4 right">
+				<form action="j_spring_security_check" method="post">
+					<label for="j_username">Login</label><input id="j_username"
+						name="j_username" size="20" maxlength="50" type="text" /> <br />
+					<label for="j_password">Password</label><input id="j_password"
+						name="j_password" size="20" maxlength="50" type="password" /> <br />
+					<input type="submit" value="Login" />
+				</form>
+			</div>
+		</div>
+	</section>
 </body>
 </html>

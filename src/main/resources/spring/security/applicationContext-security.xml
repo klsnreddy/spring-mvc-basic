@@ -26,7 +26,7 @@ http://www.springframework.org/schema/security/spring-security-3.0.4.xsd">
 	<security:authentication-manager>
 		<security:authentication-provider>
 			<security:jdbc-user-service
-				data-source-ref="dataSource" />
+				data-source-ref="embeddedH2dataSource" />
 		</security:authentication-provider>
 	</security:authentication-manager>
 

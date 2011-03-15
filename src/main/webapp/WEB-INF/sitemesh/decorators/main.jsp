@@ -15,31 +15,6 @@
 
 <title><decorator:title default="Welcome!" /></title>
 
-<script src="<c:url value="/resources/52/js/modernizr-1.7.min.js"/>"></script>
-
-<!-- this is the javascript allowing html5 to run in older browsers -->
-<!--[if IE]><script type="text/javascript" src="<c:url value="/resources/52/js/excanvas.js"/>"></script><![endif]-->
-
-<!-- this script is needed for using advanced css selectors in your css -->
-<!--[if (gte IE 6)&(lte IE 8)]>
-    	<script src="<c:url value="/resources/52/js/selectivizr.js"/>"></script>
-    <![endif]-->
-
-<script src="http://code.jquery.com/jquery-1.5.1.js"
-	type="text/javascript"></script>
-
-<script
-	src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/jquery-ui.min.js"
-	type="text/javascript"></script>
-
-<script
-	src="http://jquery-ui.googlecode.com/svn/tags/latest/external/jquery.bgiframe-2.1.2.js"
-	type="text/javascript"></script>
-
-<script
-	src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/i18n/jquery-ui-i18n.min.js"
-	type="text/javascript"></script>
-
 <link rel="stylesheet" type="text/css"
 	href="<c:url value="/resources/52/css/reset.css"/>" media="screen"
 	title="html5doctor.com Reset Stylesheet" />
@@ -61,8 +36,30 @@
 	href="<c:url value="/resources/52/css/forms.css"/>" media="screen" />
 
 <link rel="stylesheet"
-	href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/themes/ui-lightness/jquery-ui.css"
+	href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/themes/pepper-grinder/jquery-ui.css"
 	type="text/css" media="all" />
+
+<script src="<c:url value="/resources/52/js/modernizr-1.7.min.js"/>"></script>
+
+<!-- this is the javascript allowing html5 to run in older browsers -->
+<!--[if IE]><script type="text/javascript" src="<c:url value="/resources/52/js/excanvas.js"/>"></script><![endif]-->
+
+<!-- this script is needed for using advanced css selectors in your css -->
+<!--[if (gte IE 6)&(lte IE 8)]>
+    	<script src="<c:url value="/resources/52/js/selectivizr.js"/>"></script>
+    <![endif]-->
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"
+	type="text/javascript"></script>
+
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/jquery-ui.min.js"
+	type="text/javascript"></script>
+
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/i18n/jquery-ui-i18n.min.js"
+	type="text/javascript"></script>
 
 <!-- Canvas example taken from https://developer.mozilla.org/en/Canvas_tutorial/Basic_usage -->
 <script>
@@ -81,91 +78,82 @@
 </script>
 
 <style>
-/* Feel free to remove these styles, they are for demo page */
 header {
-	height: 112px;
-	position: relative;
-	margin-bottom: 5px;
+	padding-top: 25px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 20px;
 }
 
 header .logo {
-	font-size: 2.5em;
-	height: 52px;
-	padding-top: 28px;
-	font-weight: 700;
-	text-shadow: 1px 1px 2px #000;
-	color: #fba;
-	filter: Shadow(Color =                                   #666666, Direction = 
-		     
-		                  
-		        135, Strength =             
-		                     3);
+	font-size: 3.52em;
 }
 
-header .statement {
-	width: 20%;
-	text-align: right;
-	padding-top: 30px;
-}
-
-header nav {
-	background-color: #525252;
-	color: #fff;
-	height: 30px;
-}
-
-nav ul {
-	list-style: none;
-}
-
-nav ul li {
+header nav ul li {
 	float: left;
-	margin-left: 5px;
+	margin-top: 12px;
 }
 
-nav ul li a {
+header nav ul li a {
 	display: block;
-	color: #fff;
+	padding: 5px 15px;
+	border-right: 1px solid #eee;
+	font-size: 1.52em;
+	font-family: Georgia, "Times New Roman", Times, serif;
 	text-decoration: none;
-	padding: 2px 8px;
-	margin-top: 8px;
-	-moz-border-radius-topleft: 5px;
-	-webkit-border-top-left-radius: 5px;
-	-moz-border-radius-topright: 5px;
-	-webkit-border-top-right-radius: 5px;
 }
 
-nav ul li a:hover,nav ul li.active a {
-	background-color: #fff;
-	color: #000;
+header nav ul li a:hover {
+	background-color: #eee;
+	border-right: 1px solid #ccc;
+	text-shadow: -1px -1px 0px #fff;
 }
 
-aside {
-	min-height: 525px;
+header nav ul li.last a {
+	border-right: none;
 }
 
-.submit,.submit:visited {
-	background: #525252;
-	display: inline-block;
-	padding: 5px 10px 6px;
-	color: #fff;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-	border: none;
-	text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
-	position: relative;
-	cursor: pointer;
-	margin-bottom: 5px;
+#css3 div>div {
+	margin: 0px 0px 50px 0px;
+	padding: 6px;
+	border: 1px solid #eee;
+}
+
+#grid div {
+	text-align: center;
+}
+
+#grid div>.col {
+	border-bottom: 1px solid #ccc;
+	padding: 10px 0px;
+	outline: 1px solid #eee;
+}
+
+.vim-css {
+	margin: 10px auto;
+}
+
+h2 {
+	border-bottom: 1px dashed #ccc;
+	margin-top: 15px;
+}
+
+.documentation {
+	display: block;
+	background-color: #eee;
+	padding: 6px 13px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #666;
+	text-align: right;
+	text-shadow: -1px -1px 0px #fff;
 }
 
 footer {
-	font-size: .8em;
+	text-align: center;
+	color: #666;
+	font-size: 0.9em;
+	padding: 4px 0px;
 }
 </style>
-
 
 <decorator:head />
 </head>
@@ -173,10 +161,8 @@ footer {
 <body>
 	<div class="row">
 		<header>
-			<div class="logo left">CookDB</div>
-			<div class="statement right">Recipe search ends here</div>
-			<div class="clear"></div>
-			<nav>
+			<div class="logo col_7 col">CookDB</div>
+			<nav class="col_9 col">
 				<ul>
 					<li class="active"><a href="http://52framework.com/demo">Home</a>
 					</li>
@@ -188,8 +174,9 @@ footer {
 					</li>
 				</ul>
 			</nav>
+			<div class="clear"></div>
 		</header>
-		<decorator:body />
 	</div>
+	<decorator:body />
 </body>
 </html>
