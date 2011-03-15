@@ -13,8 +13,7 @@
 	content="cookbook, cook, recipe, indian, chinese, american" />
 <meta name="description" content="CookBook Application" />
 
-<title><decorator:title default="Welcome!" />
-</title>
+<title><decorator:title default="Welcome!" /></title>
 
 <link rel="stylesheet" type="text/css"
 	href="<c:url value="/resources/52/css/reset.css"/>" media="screen"
@@ -144,23 +143,24 @@ footer {
 
 #menu {
 	list-style: none;
+	width: 940px;
 	margin: 30px auto 0px auto;
-	height: 40px;
+	height: 43px;
 	padding: 0px 20px 0px 20px;
 	/* Rounded Corners */
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
 	/* Background color and gradients */
-	background: #facade;
-	background: -moz-linear-gradient(top, #facade, #f16da4);
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#facade),
-		to(#f16da4) );
+	background: #014464;
+	background: -moz-linear-gradient(top, #0272a7, #013953);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#0272a7),
+		to(#013953) );
 	/* Borders */
-	border: 1px solid #f7abcb;
-	-moz-box-shadow: inset 0px 0px 1px #f7abcb;
-	-webkit-box-shadow: inset 0px 0px 1px #f7abcb;
-	box-shadow: inset 0px 0px 1px #f7abcb;
+	border: 1px solid #002232;
+	-moz-box-shadow: inset 0px 0px 1px #edf9ff;
+	-webkit-box-shadow: inset 0px 0px 1px #edf9ff;
+	box-shadow: inset 0px 0px 1px #edf9ff;
 }
 
 #menu li {
@@ -168,20 +168,10 @@ footer {
 	display: block;
 	text-align: center;
 	position: relative;
-	padding: 4px 9px 4px 9px;
+	padding: 4px 10px 4px 10px;
 	margin-right: 30px;
 	margin-top: 7px;
-	border: 1px solid #777777;
-	/*
-	*background color for the list item
-	*/
-	background: #F4F4F4;
-	background: -moz-linear-gradient(top, #F4F4F4, #EEEEEE);
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F4F4F4),
-		to(#EEEEEE) );
-	-moz-border-radius: 5px 5px 0px 0px;
-	-webkit-border-radius: 5px 5px 0px 0px;
-	border-radius: 5px 5px 0px 0px;
+	border: none;
 }
 
 #menu li:hover {
@@ -196,6 +186,30 @@ footer {
 	-moz-border-radius: 5px 5px 0px 0px;
 	-webkit-border-radius: 5px 5px 0px 0px;
 	border-radius: 5px 5px 0px 0px;
+}
+
+#menu li a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #EEEEEE;
+	display: block;
+	outline: 0;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #000;
+}
+
+#menu li:hover a {
+	color: #161616;
+	text-shadow: 1px 1px 1px #FFFFFF;
+}
+
+#menu li .drop {
+	padding-right: 21px;
+	background: url("img/drop.png") no-repeat right 8px;
+}
+
+#menu li:hover .drop {
+	background: url("img/drop.png") no-repeat right 7px;
 }
 </style>
 
@@ -212,8 +226,10 @@ footer {
 					</li>
 					<li><a href="http://52framework.com/documentation">People</a>
 					</li>
-					<li><a href="http://52framework.com/about">About</a></li>
-					<li><a href="http://enavu.com">CookDB</a></li>
+					<li><a href="http://52framework.com/about">About</a>
+					</li>
+					<li><a href="http://enavu.com">CookDB</a>
+					</li>
 				</ul>
 			</nav>
 			<div class="clear"></div>
