@@ -13,7 +13,8 @@
 	content="cookbook, cook, recipe, indian, chinese, american" />
 <meta name="description" content="CookBook Application" />
 
-<title><decorator:title default="Welcome!" /></title>
+<title><decorator:title default="Welcome!" />
+</title>
 
 <link rel="stylesheet" type="text/css"
 	href="<c:url value="/resources/52/css/reset.css"/>" media="screen"
@@ -35,9 +36,14 @@
 <link rel="stylesheet" type="text/css"
 	href="<c:url value="/resources/52/css/forms.css"/>" media="screen" />
 
+<link rel="stylesheet" type="text/css"
+	href="<c:url value="/resources/jquery-ui/custom-theme/jquery-ui-1.8.10.custom.css"/>"
+	media="all" />
+<!--
 <link rel="stylesheet"
 	href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/themes/pepper-grinder/jquery-ui.css"
 	type="text/css" media="all" />
+	-->
 
 <script src="<c:url value="/resources/52/js/modernizr-1.7.min.js"/>"></script>
 
@@ -88,30 +94,6 @@ header .logo {
 	font-size: 3.52em;
 }
 
-header nav ul li {
-	float: left;
-	margin-top: 12px;
-}
-
-header nav ul li a {
-	display: block;
-	padding: 5px 15px;
-	border-right: 1px solid #eee;
-	font-size: 1.52em;
-	font-family: Georgia, "Times New Roman", Times, serif;
-	text-decoration: none;
-}
-
-header nav ul li a:hover {
-	background-color: #eee;
-	border-right: 1px solid #ccc;
-	text-shadow: -1px -1px 0px #fff;
-}
-
-header nav ul li.last a {
-	border-right: none;
-}
-
 #css3 div>div {
 	margin: 0px 0px 50px 0px;
 	padding: 6px;
@@ -153,6 +135,68 @@ footer {
 	font-size: 0.9em;
 	padding: 4px 0px;
 }
+
+#navlist {
+	padding-left: 0;
+	margin-left: 0;
+	border-bottom: 1px solid gray;
+}
+
+#menu {
+	list-style: none;
+	margin: 30px auto 0px auto;
+	height: 40px;
+	padding: 0px 20px 0px 20px;
+	/* Rounded Corners */
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	/* Background color and gradients */
+	background: #facade;
+	background: -moz-linear-gradient(top, #facade, #f16da4);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#facade),
+		to(#f16da4) );
+	/* Borders */
+	border: 1px solid #f7abcb;
+	-moz-box-shadow: inset 0px 0px 1px #f7abcb;
+	-webkit-box-shadow: inset 0px 0px 1px #f7abcb;
+	box-shadow: inset 0px 0px 1px #f7abcb;
+}
+
+#menu li {
+	float: left;
+	display: block;
+	text-align: center;
+	position: relative;
+	padding: 4px 9px 4px 9px;
+	margin-right: 30px;
+	margin-top: 7px;
+	border: 1px solid #777777;
+	/*
+	*background color for the list item
+	*/
+	background: #F4F4F4;
+	background: -moz-linear-gradient(top, #F4F4F4, #EEEEEE);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F4F4F4),
+		to(#EEEEEE) );
+	-moz-border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	border-radius: 5px 5px 0px 0px;
+}
+
+#menu li:hover {
+	border: 1px solid #777777;
+	padding: 4px 9px 4px 9px;
+	/* Background color and gradients */
+	background: #F4F4F4;
+	background: -moz-linear-gradient(top, #F4F4F4, #EEEEEE);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F4F4F4),
+		to(#EEEEEE) );
+	/* Rounded corners */
+	-moz-border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	border-radius: 5px 5px 0px 0px;
+}
 </style>
 
 <decorator:head />
@@ -161,22 +205,26 @@ footer {
 <body>
 	<div class="row">
 		<header>
-			<div class="logo col_7 col">CookDB</div>
-			<nav class="col_9 col">
-				<ul>
+			<div class="logo col_16 col">CookDB</div>
+			<nav class="left col_16 col">
+				<ul id="menu">
 					<li class="active"><a href="http://52framework.com/demo">Home</a>
 					</li>
 					<li><a href="http://52framework.com/documentation">People</a>
 					</li>
-					<li><a href="http://52framework.com/about">About</a>
-					</li>
-					<li><a href="http://enavu.com">CookDB</a>
-					</li>
+					<li><a href="http://52framework.com/about">About</a></li>
+					<li><a href="http://enavu.com">CookDB</a></li>
 				</ul>
 			</nav>
 			<div class="clear"></div>
 		</header>
 	</div>
 	<decorator:body />
+	<footer class="row">
+		<div class="col_16 col">
+			all rights reserved &copy; <a href="http://www.cookdb.com">cookdb
+				inc</a> | Recipe search ends here
+		</div>
+	</footer>
 </body>
 </html>

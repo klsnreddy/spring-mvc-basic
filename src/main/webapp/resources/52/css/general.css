@@ -51,20 +51,6 @@ h4 {	font-size:1.452em;}
 h5 {	font-size:1.252em;} 
 h6 {	font-size:1.52em;}
 
-/* ** ** ul li's ** ** */
-ul{
-  list-style:outside disc;
-}
-ul,ol{
-  margin:0 0 1.5em 1.5em;
-  padding:0;
-}
-li ul,li ol{
-  padding:0;
-  margin:0 0 1.5em 1.5em;
-}
-
-
 /* ** ** custom select color ** ** */
 ::selection {
 	background: #525252; /* Safari */
