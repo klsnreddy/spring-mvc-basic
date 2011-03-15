@@ -13,42 +13,56 @@
 	content="cookbook, cook, recipe, indian, chinese, american" />
 <meta name="description" content="CookBook Application" />
 
-<title><decorator:title default="Welcome!" />
-</title>
+<title><decorator:title default="Welcome!" /></title>
+
+<script src="<c:url value="/resources/52/js/modernizr-1.7.min.js"/>"></script>
+
+<!-- this is the javascript allowing html5 to run in older browsers -->
+<!--[if IE]><script type="text/javascript" src="<c:url value="/resources/52/js/excanvas.js"/>"></script><![endif]-->
+
+<!-- this script is needed for using advanced css selectors in your css -->
+<!--[if (gte IE 6)&(lte IE 8)]>
+    	<script src="<c:url value="/resources/52/js/selectivizr.js"/>"></script>
+    <![endif]-->
+
+<script src="http://code.jquery.com/jquery-1.5.1.js"
+	type="text/javascript"></script>
+
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/jquery-ui.min.js"
+	type="text/javascript"></script>
+
+<script
+	src="http://jquery-ui.googlecode.com/svn/tags/latest/external/jquery.bgiframe-2.1.2.js"
+	type="text/javascript"></script>
+
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/i18n/jquery-ui-i18n.min.js"
+	type="text/javascript"></script>
 
 <link rel="stylesheet" type="text/css"
 	href="<c:url value="/resources/52/css/reset.css"/>" media="screen"
 	title="html5doctor.com Reset Stylesheet" />
+
+<!-- in the CSS3 stylesheet you will find examples of some great new features CSS has to offer -->
 <link rel="stylesheet" type="text/css"
 	href="<c:url value="/resources/52/css/css3.css"/>" media="screen" />
+
+<!-- general stylesheet contains some default styles, you do not need this, but it helps you keep a uniform style -->
 <link rel="stylesheet" type="text/css"
 	href="<c:url value="/resources/52/css/general.css"/>" media="screen" />
+
+<!-- grid's will help you keep your website appealing to your users, view 52framework.com website for documentation -->
 <link rel="stylesheet" type="text/css"
 	href="<c:url value="/resources/52/css/grid.css"/>" media="screen" />
-<link rel="stylesheet"
-	href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/pepper-grinder/jquery-ui.css"
-	type="text/css" media="all" />
-<link rel="stylesheet"
-	href="http://static.jquery.com/ui/css/demo-docs-theme/ui.theme.css"
-	type="text/css" media="all" />
 
-<!-- ** Javascript ** -->
-<script src="<c:url value="/resources/52/js/modernizr-1.7.min.js"/>"></script>
-<script
-	src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"
-	type="text/javascript"></script>
-<script
-	src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"
-	type="text/javascript"></script>
-<script
-	src="http://jquery-ui.googlecode.com/svn/tags/latest/external/jquery.bgiframe-2.1.2.js"
-	type="text/javascript"></script>
-<script
-	src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/i18n/jquery-ui-i18n.min.js"
-	type="text/javascript"></script>
+<!-- special styling for forms, this can be used as a form framework on its own -->
+<link rel="stylesheet" type="text/css"
+	href="<c:url value="/resources/52/css/forms.css"/>" media="screen" />
 
-<!-- this is the javascript allowing html5 to run in older browsers -->
-<!--[if IE]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
+<link rel="stylesheet"
+	href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/themes/ui-lightness/jquery-ui.css"
+	type="text/css" media="all" />
 
 <!-- Canvas example taken from https://developer.mozilla.org/en/Canvas_tutorial/Basic_usage -->
 <script>
@@ -81,8 +95,11 @@ header .logo {
 	font-weight: 700;
 	text-shadow: 1px 1px 2px #000;
 	color: #fba;
-	filter: Shadow(Color =         #666666, Direction =         135, Strength =
-		        3);
+	filter: Shadow(Color =                                   #666666, Direction = 
+		     
+		                  
+		        135, Strength =             
+		                     3);
 }
 
 header .statement {
@@ -165,8 +182,10 @@ footer {
 					</li>
 					<li><a href="http://52framework.com/documentation">People</a>
 					</li>
-					<li><a href="http://52framework.com/about">About</a></li>
-					<li><a href="http://enavu.com">CookDB</a></li>
+					<li><a href="http://52framework.com/about">About</a>
+					</li>
+					<li><a href="http://enavu.com">CookDB</a>
+					</li>
 				</ul>
 			</nav>
 		</header>
