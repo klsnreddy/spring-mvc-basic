@@ -17,7 +17,7 @@
 		<div class="clear" style="height: 15px"></div>
 		<section class="row">
 		<div id="fte">
-			<form class="col_16">
+			<form class="right">
 				<input type="text" class="rounded box_shadow" style="width: 400px"
 					name="searchTerms" value="Search for your favourite recipes .." />
 				<a href="#" class="button green medium">Search</a>
@@ -56,9 +56,12 @@
 				<div class="col_12 col">
 					<div id="tabs">
 						<ul>
-							<li><a href="#tabs-1">First</a></li>
-							<li><a href="#tabs-2">Second</a></li>
-							<li><a href="#tabs-3">Third</a></li>
+							<li><a href="#tabs-1">First</a>
+							</li>
+							<li><a href="#tabs-2">Second</a>
+							</li>
+							<li><a href="#tabs-3">Third</a>
+							</li>
 						</ul>
 						<div id="tabs-1">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do

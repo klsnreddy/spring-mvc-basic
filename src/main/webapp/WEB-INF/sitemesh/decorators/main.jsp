@@ -100,12 +100,14 @@ header {
 }
 
 header .logo {
-	font-size: 3.5em;
+	margin-top: 2px; font-size : 3.5em;
 	font-weight: 700;
 	text-shadow: 1px 1px 2px #000;
 	color: #64991E;
-	filter: Shadow(Color =       #666666, Direction =       135, Strength =   
-   3);
+	filter: Shadow(Color =           #666666, Direction =           135, Strength =
+		    
+     3);
+	font-size: 3.5em;
 }
 
 header nav ul li {
@@ -118,15 +120,12 @@ header nav ul li a {
 	padding: 5px 15px;
 	border-right: 1px solid #eee;
 	font-size: 1.25em;
-	color: #64991E, font-family :                 Georgia, "Times New Roman",
-		Times, serif;
+	color: #64991E, font-family :   Georgia, "Times New Roman", Times, serif;
 	text-decoration: none;
 }
 
 header nav ul li a:hover {
-	background-color: #eee;
-	border-right: 1px solid #ccc;
-	text-shadow: -1px -1px 0px #fff;
+	text-shadow: 0.5px 1px 1px #80c426;
 }
 
 ul>li:last-child>a {
