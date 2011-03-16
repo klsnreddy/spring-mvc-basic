@@ -13,11 +13,12 @@
 </script>
 </head>
 <body>
+	<div class="clear" style="height: 15px"></div>
 	<section class="row">
 		<div class="col_16 col">
 			<div class="col_12 left">
 				<article>
-					<h3>Please Log In to Your Account</h3>
+					<h2>Please Log In to Your Account</h2>
 					<blockquote class="right">Please find the recipe
 						details to the left.</blockquote>
 					<p>

@@ -13,7 +13,8 @@
 	content="cookbook, cook, recipe, indian, chinese, american" />
 <meta name="description" content="CookBook Application" />
 
-<title><decorator:title default="Welcome!" /></title>
+<title><decorator:title default="Welcome!" />
+</title>
 
 <link rel="stylesheet" type="text/css"
 	href="<c:url value="/resources/52/css/reset.css"/>" media="screen"
@@ -31,9 +32,14 @@
 <link rel="stylesheet" type="text/css"
 	href="<c:url value="/resources/52/css/grid.css"/>" media="screen" />
 
-<!-- special styling for forms, this can be used as a form framework on its own -->
+<!-- special styling for forms, this can be used as a form framework on its own 
 <link rel="stylesheet" type="text/css"
 	href="<c:url value="/resources/52/css/forms.css"/>" media="screen" />
+-->
+
+<!--  Custom Styles for our application  -->
+<link rel="stylesheet" type="text/css"
+	href="<c:url value="/resources/css/cookdb.css"/>" media="screen" />
 
 <link rel="stylesheet" type="text/css"
 	href="<c:url value="/resources/jquery-ui/custom-theme/jquery-ui-1.8.10.custom.css"/>"
@@ -83,14 +89,48 @@
 </script>
 
 <style>
+.header-wrap {
+	background-color: #262626;
+	width: 100%;
+}
+
 header {
-	padding-top: 25px;
-	border-bottom: 1px solid #ccc;
-	padding-bottom: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 header .logo {
-	font-size: 3.52em;
+	font-size: 3.5em;
+	font-weight: 700;
+	text-shadow: 1px 1px 2px #000;
+	color: #64991E;
+	filter: Shadow(Color =       #666666, Direction =       135, Strength =   
+   3);
+}
+
+header nav ul li {
+	float: left;
+	margin-top: 12px;
+}
+
+header nav ul li a {
+	display: block;
+	padding: 5px 15px;
+	border-right: 1px solid #eee;
+	font-size: 1.25em;
+	color: #64991E, font-family :                 Georgia, "Times New Roman",
+		Times, serif;
+	text-decoration: none;
+}
+
+header nav ul li a:hover {
+	background-color: #eee;
+	border-right: 1px solid #ccc;
+	text-shadow: -1px -1px 0px #fff;
+}
+
+ul>li:last-child>a {
+	border-right: none;
 }
 
 #css3 div>div {
@@ -109,13 +149,8 @@ header .logo {
 	outline: 1px solid #eee;
 }
 
-.vim-css {
-	margin: 10px auto;
-}
-
 h2 {
 	border-bottom: 1px dashed #ccc;
-	margin-top: 15px;
 }
 
 .documentation {
@@ -134,106 +169,26 @@ footer {
 	font-size: 0.9em;
 	padding: 4px 0px;
 }
-
-#navlist {
-	padding-left: 0;
-	margin-left: 0;
-	border-bottom: 1px solid gray;
-}
-
-#menu {
-	list-style: none;
-	width: 940px;
-	margin: 30px auto 0px auto;
-	height: 43px;
-	padding: 0px 20px 0px 20px;
-	/* Rounded Corners */
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-	/* Background color and gradients */
-	background: #014464;
-	background: -moz-linear-gradient(top, #0272a7, #013953);
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#0272a7),
-		to(#013953) );
-	/* Borders */
-	border: 1px solid #002232;
-	-moz-box-shadow: inset 0px 0px 1px #edf9ff;
-	-webkit-box-shadow: inset 0px 0px 1px #edf9ff;
-	box-shadow: inset 0px 0px 1px #edf9ff;
-}
-
-#menu li {
-	float: left;
-	display: block;
-	text-align: center;
-	position: relative;
-	padding: 4px 10px 4px 10px;
-	margin-right: 30px;
-	margin-top: 7px;
-	border: none;
-}
-
-#menu li:hover {
-	border: 1px solid #777777;
-	padding: 4px 9px 4px 9px;
-	/* Background color and gradients */
-	background: #F4F4F4;
-	background: -moz-linear-gradient(top, #F4F4F4, #EEEEEE);
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F4F4F4),
-		to(#EEEEEE) );
-	/* Rounded corners */
-	-moz-border-radius: 5px 5px 0px 0px;
-	-webkit-border-radius: 5px 5px 0px 0px;
-	border-radius: 5px 5px 0px 0px;
-}
-
-#menu li a {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	color: #EEEEEE;
-	display: block;
-	outline: 0;
-	text-decoration: none;
-	text-shadow: 1px 1px 1px #000;
-}
-
-#menu li:hover a {
-	color: #161616;
-	text-shadow: 1px 1px 1px #FFFFFF;
-}
-
-#menu li .drop {
-	padding-right: 21px;
-	background: url("img/drop.png") no-repeat right 8px;
-}
-
-#menu li:hover .drop {
-	background: url("img/drop.png") no-repeat right 7px;
-}
 </style>
 
 <decorator:head />
 </head>
 <!--fmt:message key="welcome.title" /-->
 <body>
-	<div class="row">
-		<header>
-			<div class="logo col_16 col">CookDB</div>
-			<nav class="left col_16 col">
-				<ul id="menu">
-					<li class="active"><a href="http://52framework.com/demo">Home</a>
-					</li>
-					<li><a href="http://52framework.com/documentation">People</a>
-					</li>
-					<li><a href="http://52framework.com/about">About</a>
-					</li>
-					<li><a href="http://enavu.com">CookDB</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="clear"></div>
-		</header>
+	<div class="header-wrap">
+		<div class="row">
+			<header>
+				<div class="logo col_12 col">CookDB</div>
+				<nav class="col_4 col">
+					<ul>
+						<li><a href="http://52framework.com/demo">Login</a></li>
+						<li><a href="http://52framework.com/documentation">Sign
+								up</a></li>
+					</ul>
+				</nav>
+				<div class="clear"></div>
+			</header>
+		</div>
 	</div>
 	<decorator:body />
 	<footer class="row">
