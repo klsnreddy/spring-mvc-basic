@@ -13,8 +13,7 @@
 	content="cookbook, cook, recipe, indian, chinese, american" />
 <meta name="description" content="CookBook Application" />
 
-<title><decorator:title default="Welcome!" />
-</title>
+<title><decorator:title default="Welcome!" /></title>
 
 <link rel="stylesheet" type="text/css"
 	href="<c:url value="/resources/52/css/reset.css"/>" media="screen"
@@ -24,9 +23,10 @@
 <link rel="stylesheet" type="text/css"
 	href="<c:url value="/resources/52/css/css3.css"/>" media="screen" />
 
-<!-- general stylesheet contains some default styles, you do not need this, but it helps you keep a uniform style -->
+<!-- general stylesheet contains some default styles, you do not need this, but it helps you keep a uniform style 
 <link rel="stylesheet" type="text/css"
 	href="<c:url value="/resources/52/css/general.css"/>" media="screen" />
+	-->
 
 <!-- grid's will help you keep your website appealing to your users, view 52framework.com website for documentation -->
 <link rel="stylesheet" type="text/css"
@@ -89,49 +89,6 @@
 </script>
 
 <style>
-.header-wrap {
-	background-color: #262626;
-	width: 100%;
-}
-
-header {
-	padding-top: 15px;
-	padding-bottom: 15px;
-}
-
-header .logo {
-	margin-top: 2px; font-size : 3.5em;
-	font-weight: 700;
-	text-shadow: 1px 1px 2px #000;
-	color: #64991E;
-	filter: Shadow(Color =           #666666, Direction =           135, Strength =
-		    
-     3);
-	font-size: 3.5em;
-}
-
-header nav ul li {
-	float: left;
-	margin-top: 12px;
-}
-
-header nav ul li a {
-	display: block;
-	padding: 5px 15px;
-	border-right: 1px solid #eee;
-	font-size: 1.25em;
-	color: #64991E, font-family :   Georgia, "Times New Roman", Times, serif;
-	text-decoration: none;
-}
-
-header nav ul li a:hover {
-	text-shadow: 0.5px 1px 1px #80c426;
-}
-
-ul>li:last-child>a {
-	border-right: none;
-}
-
 #css3 div>div {
 	margin: 0px 0px 50px 0px;
 	padding: 6px;
@@ -173,22 +130,21 @@ footer {
 <decorator:head />
 </head>
 <!--fmt:message key="welcome.title" /-->
-<body>
-	<div class="header-wrap">
+<body id="body-wrap">
+	<header id="header-wrap">
 		<div class="row">
-			<header>
-				<div class="logo col_12 col">CookDB</div>
-				<nav class="col_4 col">
-					<ul>
-						<li><a href="http://52framework.com/demo">Login</a></li>
-						<li><a href="http://52framework.com/documentation">Sign
-								up</a></li>
-					</ul>
-				</nav>
-				<div class="clear"></div>
-			</header>
+			<div class="logo col_12 col">CookDB</div>
+			<nav class="col_4 col">
+				<ul>
+					<li><a href="http://52framework.com/demo">Login</a>
+					</li>
+					<li><a href="http://52framework.com/documentation">Sign up</a>
+					</li>
+				</ul>
+			</nav>
 		</div>
-	</div>
+		<div class="clear"></div>
+	</header>
 	<decorator:body />
 	<footer class="row">
 		<div class="col_16 col">

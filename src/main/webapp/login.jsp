@@ -50,7 +50,7 @@
 						name="j_username" size="20" maxlength="50" type="text" /> <br />
 					<label for="j_password">Password</label><input id="j_password"
 						name="j_password" size="20" maxlength="50" type="password" /> <br />
-					<input type="submit" value="Login" />
+					<input class="button blue medium" type="submit" value="Login" />
 				</form>
 			</div>
 		</div>
